@@ -2,7 +2,6 @@
 
 require.config({
     paths:{
-        requireLib:'../lib/require/require',
         jquery:'../lib/jquery/jquery-min',
         jqueryui:'../lib/jqueryui/jquery-ui-1.10.3.custom.min',
         underscore:'../bower/underscore/underscore',
@@ -12,9 +11,8 @@ require.config({
         moment:'../bower/moment/moment',
         knob:'../lib/knob/jquery.knob',
         //highcharts:'../lib/highcharts/highcharts',
-        api:'../api',
-        velocity:'../lib/velocity/velocity.min',
-        velocityui:'../lib/velocity/velocity.ui.min'
+        velocity:'../bower/velocity/velocity',
+        velocityui:'../bower/velocity/velocity.ui'
     },
     shim:{
         underscore:{
@@ -49,7 +47,7 @@ require.config({
 
 //TODO - use sugar syntax
 define(['jquery','jqueryui','underscore','backbone','router','application',
-    'sidebar/sidebarModule','main/mainModule','header/headerModule','player/playerModule','bubble','requireLib','knob'],
+    'sidebar/sidebarModule','main/mainModule','header/headerModule','player/playerModule','bubble','knob'],
     function($,jqueryui, _,Backbone,Router,Application,SidebarModule,MainModule,HeaderModule,PlayerModule){
 
         var application = new Application();
