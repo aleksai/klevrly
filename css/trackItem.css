@@ -1,0 +1,232 @@
+
+/*  TRACK ITEM  */
+.trackItem{
+    display: block;
+    border: 0px solid #F00;
+    height: 40px;
+    padding: 0px;
+    width: 100%;
+    margin: 0px 0px 3px 0px;
+    overflow: hidden;
+    border-radius: 6px;
+    position: relative;
+
+
+}
+.trackItem:hover{
+    cursor: pointer;
+    background: #F2F2F2;
+}
+
+.album-overlay .trackItem:hover{
+    background: #DFDFDF;
+}
+
+.trackItem .play{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    border: 2px solid #586B89;/*#586B89;*/
+    background: url("../img/btn_sprite.png") 1px -3px no-repeat ;
+
+
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+}
+
+.Xalbum-overlay .trackItem .play{
+    width: 35px;
+    height: 35px;
+    border: 0px solid #ccc;
+    background: url("../img/btn_track_play.png") no-repeat;
+}
+
+.trackItem .play:hover{
+    cursor: pointer;
+    opacity:0.7;
+}
+
+.trackItem .title{
+    display: inline-block;
+    width: 55%;
+    position: absolute;
+    top: 10px;
+    left: 42px;
+
+    border: 0px solid green;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.album-overlay .trackItem .title{
+    width: 47%;
+}
+.trackItem .title a{
+    color: #222;
+    font-size: 13px;
+}
+
+.trackItem .title a:hover{
+    text-decoration: none;
+}
+
+
+.trackItem .artist{
+    border: 0px dashed blue;
+    display: inline-block;
+    width: 30%;
+    position: absolute;
+    top: 12px;
+    right: 40px;
+    font-size: 12px;
+
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+
+
+.trackItem .artist a{
+    color: #666666;
+}
+
+
+.trackItem .add{
+    display: inline-block;
+    width: 28px;
+    height: 21px;
+    padding: 7px 0px 0px 0px;
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    background: #D5D5D5;
+    color: #FFF;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: bold;
+    line-height: 100%;
+
+    border-radius: 25px;
+}
+
+.trackItem .add:hover{
+    cursor: pointer;
+    background: #586B89;
+}
+
+/* Chart track item */
+.track-chart-item{
+    position: relative;
+    border: 0px dashed red;
+    width: 33%;
+    height: 60px;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 15px;
+    background: #F9F9F9;
+    transition: background 0.2s ease;
+    margin: 0px 0px 1px 0px;
+    overflow: hidden;
+}
+
+@media (max-width: 1200px){
+    .track-chart-item{
+        width: 50%;
+    }
+}
+
+@media (max-width: 640px){
+    .track-chart-item{
+        width: 100%;
+    }
+}
+
+.track-chart-item:hover{
+    background-color:rgba(58, 73, 90, 0.15);
+}
+
+.track-chart-item .image{
+    position: absolute;
+    top: 0px; left: 0px;
+    display: block;
+    border: 1px solid #FFF;
+    border-radius: 5px;
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    background: #F2F2F2;
+    transition: left 0.2s ease;
+}
+.track-chart-item .image img{
+    width: 60px;
+    height: 60px;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.track-chart-item.onHover .image{
+    left: -70px;
+}
+
+.track-chart-item  .position{
+    position: absolute;
+    top: 17px; left: 46px;
+    width: 26px;
+    height: 26px;
+    line-height: 26px;
+    border-radius: 26px;
+    border: 2px solid #FFF;
+    text-align: center;
+    color: #FFF;
+    background-color:rgba(0, 0, 0, 0.75);
+}
+.track-chart-item.onHover .position{
+    opacity: 0;
+}
+
+.track-chart-item .name{
+    position: absolute;
+    top: 10px; left: 90px;
+    font-size: 16px;
+    color: #586B89;
+    color: #474747;
+}
+
+.track-chart-item .artist{
+    position: absolute;
+    top: 30px; left: 90px;
+}
+.track-chart-item .artist a{
+    font-size: 12px;
+    color: #B0B0B0;
+}
+
+.track-chart-item .play{
+    position: absolute;
+    top: 10px;
+    left: -50px;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    line-height: 40px;
+    border: 2px solid #CDCDCD;
+    background: #FFF;
+    font-size: 11px;
+    color: #474747;
+    text-align: center;
+    transition: left 0.2s ease;
+}
+
+.track-chart-item.onHover .play{
+    left: 10px;
+}
+
+.track-chart-item .play:hover{
+    cursor: pointer;
+}

@@ -1,0 +1,356 @@
+
+
+/*OVERLAY VIEW */
+
+.album-overlay{
+    border: 0px dashed red;
+    width: 765px;
+    min-height: 475px;
+    position: relative;
+    margin: 0 auto;
+    margin-top: -600px;
+
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.album-overlay .loader{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 450px;
+    height: 100%;
+    border: 0px dashed red;
+    z-index: 2;
+    background:rgba(256,256,256,0.75) url("../img/loader.gif") no-repeat center 40%;
+    display: none;
+}
+
+.album-overlay .album-cover{
+    border: 0px dashed red;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    width: 290px;
+
+}
+
+.album-overlay .album-cover-img-large{
+
+    width: 100%;
+    -webkit-box-shadow: -2px 5px 21px rgba(50, 50, 50, 0.91);
+    -moz-box-shadow:    -2px 5px 21px rgba(50, 50, 50, 0.91);
+    box-shadow:         -2px 5px 21px rgba(50, 50, 50, 0.91);
+
+    margin-top: 20px;
+    border: 0px dashed red;
+
+    opacity: 0;
+    transition: all 0.7s ease;
+}
+
+.album-arrow{
+    position: absolute;
+    top: 25px;
+    left: 293px;
+    width: 0px;
+    height: 0px;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 15px solid rgb(255, 255, 255);
+    margin: 0 auto;
+    opacity: 0.90;
+
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.album-overlay .album-info{
+    border: 0px dashed blue;
+    background: url('../img/album_bg.png') 0px 0px no-repeat;
+    background: rgba(255,255,255,0.90);
+    /*box-shadow:         0px 1px 3px 0px rgba(50, 50, 50, 0.22);*/
+    border-radius: 4px;
+
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    width: 450px;
+    padding: 0px 0px 0px 0px;
+}
+
+
+.album-info .header{
+    position: relative;
+    width: 430px;
+    height: 40px;
+    padding: 15px 10px 10px 10px;
+    border: 0px dashed blue;
+}
+
+.album-info .header .title{
+    position: absolute;
+    top: 18px;
+    left: 20px;
+    font-size: 25px;
+    color: #222;
+    font-weight: normal;
+    max-width: 240px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-weight: lighter;
+}
+
+.album-info .header .artist .date{
+    border: 0px dashed #555;
+    margin: 0px 0px 0px 10px;
+    color: #999;
+    font-size: 12px;
+    overflow: hidden;
+
+}
+
+.album-info .header .artist{
+    position: absolute;
+    right: 25px;
+    top: 20px;
+    border: 0px dashed red;
+    max-width: 160px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #627D9A;
+    font-weight: lighter;
+
+}
+
+.album-info .header .thumbnail{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: 1px solid #CCC;
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    display: none;
+}
+
+.album-info .album-tracks{
+    width: 410px;
+    margin: 0px 0px 5px 0px;
+    height: 310px;
+    padding: 15px 20px 15px 20px;
+
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.album-info .album-tags{
+    width: 430px;
+    height: 35px;
+    overflow: hidden;
+    padding: 10px 10px 0px 10px;
+}
+
+
+
+
+
+/*
+.albumOverlay{
+    background:rgba(256,256,256,0.88);
+    border: 2px solid #FFFFFF;
+    width: 450px;
+    padding: 0px;
+    margin: 0 auto;
+    position: relative;
+    margin-top: -600px;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    border:1px solid red;
+
+    -webkit-box-shadow: -2px 5px 21px rgba(50, 50, 50, 0.91);
+    -moz-box-shadow:    -2px 5px 21px rgba(50, 50, 50, 0.91);
+    box-shadow:         -2px 5px 21px rgba(50, 50, 50, 0.91);
+
+}
+
+.albumOverlay .album-name{
+    margin: 10px 0px 0px 20px;
+    display: block;
+    font-size: 23px;
+    font-weight: normal;
+    max-width: 340px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.albumOverlay .artist-name{
+    font-size: 17px;
+    margin: 0px 0px 0px 20px;
+    font-weight: normal;
+}
+
+.albumOverlay .album-date{
+    color: #666;
+    font-weight: lighter;
+    font-size: 14px;
+}
+
+.albumOverlay .track-list{
+    width: 430;
+    border-top: 1px solid #FFF;
+    border-bottom: 1px solid #FFF;
+    height: 275px;
+    overflow-y: auto;
+    padding: 20px;
+    margin: 5px 0px 0px 0px;
+    background:rgba(256,256,256,0.89);
+}
+
+.albumOverlay .loader{
+    width: 100%;
+    height: 100%;
+    background:rgba(256,256,256,0.95) url("../img/loader.gif") no-repeat center 40%;
+    display: none;
+}
+
+.albumOverlay .album-cover{
+    width: 55px;
+    height:55px;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    border:2px solid #FFF;
+    overflow: hidden;
+}
+
+.albumOverlay .album-cover img{
+    width: 100%;
+}
+
+.albumOverlay .tag-list{
+    margin: 20px 0px 0px 20px;
+}
+
+.albumOverlay .album-cover-large{
+    height: 300px;
+    padding: 0px 0px 0px 0px;
+    width: 300px;
+    border: 0px solid red;
+    position: absolute;
+    top: -1px;
+    left: -320px;
+    text-align: center;
+
+    -webkit-box-shadow: -2px 5px 21px rgba(50, 50, 50, 0.91);
+    -moz-box-shadow:    -2px 5px 21px rgba(50, 50, 50, 0.91);
+    box-shadow:         -2px 5px 21px rgba(50, 50, 50, 0.91);
+
+    -webkit-box-reflect: below 0
+    -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.7, transparent), to(white));
+}
+
+.albumOverlay .album-cover-large img{
+
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.albumOverlay .album-cover-large{
+    height: 307px;
+    padding: 8px 0px 0px 0px;
+    width: 100%;
+    border: 0px solid red;
+    position: absolute;
+    top: 80px;
+    left: -500px;
+    background: #FFF;
+    text-align: center;
+
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}*/
+
+
+/* FULL PAGE VIEW */
+
+/*#albumViewWrapper{
+    border: 0px dashed #000000;
+    width: 100%;
+    position: relative;
+}
+
+#albumHeader{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+    border: 0px solid red;
+}
+
+#albumHeader span{
+    font-weight: normal;
+
+}
+
+#albumHeader .artist{
+    font-size: 15px;
+}
+
+#albumInfoLeft{
+    display: block;
+    padding: 0px 0px 0px 0px;
+    width: 200px;
+    position: absolute;
+    left: 0;
+    top: 55px;
+    border: 0px dashed red;
+}
+
+#albumInfoLeft .date{
+    display: block;
+    color: #888888;
+    font-size: 13px;
+    margin: 5px 0px 20px 0px;
+}
+
+#albumInfoRight{
+    display: block;
+    padding: 0px 0px 10px 0px;
+    position: absolute;
+    top: 55px;
+    left: 220px;
+    right: 0px;
+    border: 0px dashed blue;
+}
+
+#albumSummary{
+    border-bottom: 1px solid #CCCCCC;
+    padding: 0px 0px 10px 0px;
+    margin: 0px 0px 10px 0px;
+}
+
+#albumTracks{
+
+}
+*/
+

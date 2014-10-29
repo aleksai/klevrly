@@ -1,0 +1,91 @@
+
+#tagView .contentwrapper{
+    float: left;
+    width: 100%;
+}
+
+#tagView .contentcolumn{
+    margin: 0px 350px 0px 250px; /*Margins for content column. Should be "0 RightColumnWidth 0 LeftColumnWidth*/
+    padding: 0px 0px 0px 5px;
+}
+
+#tagView .leftcolumn{
+    float: left;
+    width: 250px; /*Width of left column*/
+    margin-left: -100%;
+    padding-bottom: 150px;
+}
+
+#tagView .rightcolumn{
+    float: left;
+    width: 350px; /*Width of right column*/
+    margin-left: -350px; /*Set left marginto -(RightColumnWidth)*/
+    padding: 0px 0px 200px 0px;
+}
+
+#tagView .innertube{
+    margin: 10px; /*Margins for inner DIV inside each column (to provide padding)*/
+    margin-top: 0;
+}
+
+#tagView .content-section{
+    margin: 0px 0px 12px 0px;
+    border: 0px dashed blue;
+}
+
+#tagView .tag-name{
+    text-transform: capitalize;
+    margin-bottom: 3px
+}
+
+#tagView .action-bar{
+    margin-bottom: 10px;
+}
+
+
+/*Artist View overrides*/
+#tagView .artistItem{
+    width: 120px;
+    height: 133px;
+    margin: 0px 0px 5px 0px;
+    border: 0px dashed red;
+}
+
+/*
+#tagView .artistItem .title,#tagView .artistItem .title h4 a{
+    font-size: 13px;
+    font-weight: normal;
+    color: #66B5DE;
+    font-family: "Open Sans","Helvetica Neue", helvetica,Arial,sans-serif;
+}*/
+
+#tagView .artistItem .cover{
+    left: 10px;
+    width: 100px;
+    height: 100px;
+}
+
+#tagView .artistItem .cover img{
+    margin: 0px 0px 0px -4px;
+    width: 120px;
+}
+
+#tagView .artistItem .title{
+    bottom: 0px;
+    top: auto;
+    right: 0px;
+    left: 5px;
+    text-align: center;
+    border: 0px solid blue;
+    height: auto;
+}
+
+#tagView .artistItem .title a{
+    text-align: center;
+}
+
+/*Track Item view overrides*/
+#tagView .trackItem .title{
+    border: 0px dashed blue;
+    max-width: 140px;
+}

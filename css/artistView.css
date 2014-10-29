@@ -1,0 +1,192 @@
+@media (min-width: 640px){
+
+    #artistView .contentwrapper{
+        float: left;
+        width: 100%;
+    }
+
+    #artistView .contentcolumn{
+        margin: 0px 235px 0px 250px; /*Margins for content column. Should be "0 RightColumnWidth 0 LeftColumnWidth*/
+        padding: 0px 10px 0px 50px;
+    }
+
+    #artistView .leftcolumn{
+        float: left;
+        width: 250px; /*Width of left column*/
+        margin-left: -100%;
+        padding-bottom: 150px;
+    }
+
+    #artistView .rightcolumn{
+        float: left;
+        width: 235px; /*Width of right column*/
+        margin-left: -235px; /*Set left marginto -(RightColumnWidth)*/
+    }
+
+    #artistView .innertube{
+        margin: 10px; /*Margins for inner DIV inside each column (to provide padding)*/
+        margin-top: 0;
+    }
+
+}
+
+
+
+
+#artistView{
+    border: 0px solid red;
+    height: auto;
+    overflow: hidden;
+
+}
+
+#artistView .content-section{
+    border: 0px dashed red;
+    margin: 5px 0px 5px 0px;
+}
+
+#artistView .content-section.similar{
+}
+
+#artistView .content-section.albums{
+    border: 0px dashed blue;
+    /*Remove spacing between inline elements*/
+    font-size: 0px;
+    letter-spacing: 0px;
+    word-spacing: 0px;
+    transition:all 0.2 ease;
+}
+
+#artistView .albums-header{
+    margin-top: 15px;
+}
+
+
+#artistView h2.artist {
+    min-height: 47px;
+    border: 0px dashed red;
+    margin-bottom: 3px;
+}
+
+.hotness-wrapper{
+    border: 0px dashed red;
+    vertical-align: top;
+}
+
+.artist-metric {
+    border: 0px dashed red;
+    display: inline-block;
+    text-align: center;
+    margin: 0px 8px 5px 0px;
+    color: #888;
+    font-size: 12px;
+}
+
+.artist-hotness, .artist-popularity{
+    display: block;
+    height: 45px;
+    width: 45px;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 5px;
+    border-radius: 30px;
+    vertical-align: middle;
+    line-height: 150%;
+    text-align: center;
+    font-size: 28px;
+    color: #586B89;
+    font-weight: lighter;
+    border: 3px solid #FF8000;
+}
+
+.artist-popularity{
+    border: 3px solid #66B5DE;
+    margin: 0px 0px 0px 8px;
+}
+
+
+#artistView .artistItem{
+    border: 0px solid red;
+    display: block;
+    width: 100%;
+}
+
+#artistView .genreItem{
+
+}
+
+#artistView .avatar-wrapper{
+    border: 0px dashed red;
+    width: 200px;
+    height: 200px;
+    border-radius: 125px;
+    overflow: hidden;
+    position: relative;
+}
+
+#artistView .avatar-wrapper .overlay{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: rgba(0,0,0,0.35);
+    display: none;
+    line-height: 197px;
+    font-size: 38px;
+    text-align: center;
+    color: #DDD;
+    vertical-align: middle;
+}
+
+#artistView .avatar-wrapper .overlay:hover{
+    cursor: pointer;
+}
+
+/* Todo -add JS to center image */
+#artistView img.avatar{
+    left: -30px;
+    position: absolute;
+    min-height: 200px;
+    max-width: 400px;
+    transition:opacity 0.2s ease;
+    opacity: 0;
+}
+
+#artistView .action-bar{
+    border:0px dashed red;
+    margin: 0px 0px 15px 0px;
+}
+
+#artistView .bio{
+    color: #444444;
+}
+
+#artistView #video-chart{
+    width: 98%;
+    max-width: 650px;
+    height: 200px;
+    display: block;
+    margin: 0px 0px 5px 0px;
+}
+
+.bar-chart{
+    width: 575px;
+    height: 21px;
+    padding: 1px;
+    overflow: hidden;
+    background: #3D4D5F;
+    position: relative;
+}
+
+.bar-chart .chart-value{
+    witdh: 0%;
+    height: 100%;
+    background: #7398BB;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-transition: all 400ms ease;
+    -moz-transition: all 400ms ease;
+    -ms-transition: all 400ms ease;
+    -o-transition: all 400ms ease;
+    transition: all 400ms ease;
+}
+
+

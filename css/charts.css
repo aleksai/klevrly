@@ -1,0 +1,44 @@
+.charts{
+
+}
+
+.charts .charts-content{
+    margin: 15px 0px 0px 0px;
+}
+
+.charts-header-left{
+    border: 0px dashed red;
+    display: inline-block;
+    width: 39%;
+    height: 40px;
+}
+
+.charts-header-right{
+    border: 0px dashed blue;
+    display: inline-block;
+    width: 59%;
+    height: 40px;
+    float: right;
+}
+
+.charts-header-left .chart-title{
+    text-transform: capitalize;
+}
+
+.charts-header-right .button-bar{
+    text-align: right;
+}
+
+@media (max-width: 640px){
+    .charts-header-right{
+        width: 100%;
+        float: none;
+    }
+    .charts-header-left{
+        display: none;
+    }
+
+    .charts-header-right .button-bar{
+        text-align: center;
+    }
+}

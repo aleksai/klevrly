@@ -1,0 +1,73 @@
+.sidebar-list{
+    margin: 0px;
+    padding: 0;
+    list-style-type: none;
+    width: 100%;
+    min-width: 200px;
+}
+
+.sidebar-list li{
+    /*border-bottom: 1px solid #1C222A;
+    border-top: 1px solid #536679;*/
+    border-top: 1px solid #475869;
+
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #DDD;
+    /*text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.36);*/
+}
+.sidebar-list li a{
+    transition: background-color 0.4s ease;
+    display: inline-block;
+    padding: 10px 10px 10px 15px;
+    width: 100%;
+    color: #DDD;
+    font-size: 11px;
+}
+.sidebar-list li a:hover{
+    text-decoration: none;
+    background: #43576B;
+    cursor: pointer;
+}
+
+.sidebar-list li a .title{
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+.expanded .sidebar-list li a .title{
+    opacity: 1;
+}
+
+.sidebar-list li i{
+    margin: 0px 0px 0px 0px;
+    min-width: 30px;
+    border: 0px dashed red;
+}
+
+.sidebar-list li.unclickable{
+    height: 50px;
+}
+
+.sidebar-list li a.selected{
+    background: #475869;
+    /*color: #66B5DE;*/
+}
+
+.sidebar-list li:first-child{
+    border-top: 0px solid red;
+}
+
+.sidebar-list li:last-child{
+    border-bottom: 0px solid red;
+}
+
+.sidebar-list li:first-child:hover, .sidebar-list li:last-child:hover{
+    background: #3a495a;
+    cursor: default;
+}
+
+
+.sidebar-list li.first:hover,.sidebar-list li.last:hover{
+    cursor: default;
+    background: none;
+}

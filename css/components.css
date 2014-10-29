@@ -1,0 +1,127 @@
+
+/* Custom Scrollbars for webkit*/
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #f2f2f2;
+    background-color: rgba(0, 0, 0, 0.10);
+}
+/*Flat button*/
+
+.btn-standard{
+    display: inline-block;
+    padding: 4px 8px 4px 8px;
+    margin: 0px 2px 0px 2px;
+    background: #FFF;
+    border-radius: 20px;
+    border: 1px solid #586B89;
+    color: #586B89;
+    opacity: 0.75;
+}
+
+.btn-standard:hover{
+    opacity: 1.0;
+    cursor: pointer;
+}
+
+/* Button Bar */
+.button-bar{
+    width: 100%;
+    text-align: center;
+}
+
+.button-bar .button{
+    display: inline-block;
+    padding: 4px 8px 4px 8px;
+    margin: 0px 2px 0px 2px;
+    border: 1px solid #FFF;
+    border-radius: 5px;
+    color: #586B89;
+}
+
+.button-bar .button a{
+    color: #586B89;
+}
+
+.button-bar .button a:hover{
+    text-decoration: none;
+}
+
+.button-bar .button:hover{
+    border: 1px solid #E2E4E9;
+    cursor: pointer;
+}
+
+.button-bar .button.selected{
+    background: #E2E4E9;
+    border: 1px solid #E2E4E9;
+}
+
+/*Round Buttons*/
+.btn-round{
+    display: inline-block;
+    border: 1px solid #586B89;
+    border-radius: 50px;
+    padding: 3px 17px 3px 17px;
+    font-size: 11px;
+    color: #586B89;
+    text-transform: uppercase;
+}
+
+.btn-round:hover{
+    border: 1px solid #66B5DE;
+    color: #66B5DE;
+    cursor: pointer;
+}
+
+.btn-round.highlight{
+    border: 1px solid #66B5DE;
+    color: #FFF;
+    background: #66B5DE;
+}
+
+.btn-round .title{
+    margin: 0px 0px 0px 8px;
+    display: inline-block;
+}
+
+/*Home view card - move somewhere else */
+
+.home-view{
+    width: 100%;
+    border:0px dashed red;
+    padding-top: 100px;
+    text-align: center;
+}
+.home-view-card{
+    border: 1px solid #586B89;
+    display: inline-block;
+    padding-top: 10px;
+    width: 200px;
+    height: 240px;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 8px;
+    color: #586B89;
+    font-size: 12px;
+    margin: 0px 5px 0px 5px;
+}
+
+.home-view-card:hover{
+    border: 1px solid #66B5DE ;
+}
+
+.home-view-card i{
+    margin-top: 70px;
+    color: #586B89;
+    display: block;
+    font-size: 110px;
+}
+
+.home-view-card i:hover{
+    color: #66B5DE;
+}

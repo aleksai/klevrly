@@ -1,0 +1,47 @@
+
+
+
+#albumSearchResults{
+    display: block;
+    border: 0px solid red;
+
+}
+
+#videoSearchResults{
+    display: block;
+    border: 0px solid blue;
+}
+
+
+#artistSearchResults{
+    display: block;
+    padding: 0px 0px 0px 0px;
+    border: 0px dashed red;
+}
+
+#trackSearchResults{
+    isplay: block;
+    padding: 0px 0px 10px 0px;
+    border: 0px dashed blue;
+}
+
+#genreSearchResults{
+    width: 100%;
+}
+
+.searchResultSection{
+    border: 0px dashed red;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+
+}
+
+.searchSeparator{
+    display: block;
+    border-top: 1px solid #CCCCCC;
+    margin: 10px 0px 20px 0px;
+    height: 1px;
+    clear: both;
+}
+
+
