@@ -9,7 +9,7 @@ require.config({
         backbone:'../bower/backbone/backbone',
         text:'../lib/require/text',
         bubble: '../lib/bubble/backbone.bubble.min',
-        moment:'../lib/moment/moment.min',
+        moment:'../bower/moment/moment',
         knob:'../lib/knob/jquery.knob',
         //highcharts:'../lib/highcharts/highcharts',
         api:'../api',

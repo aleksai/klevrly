@@ -22,6 +22,7 @@
       "backbone": "git@github.com:jashkenas/backbone#~1.1.0",
       "underscore": "git@github.com:jashkenas/underscore#~1.7.0",
       "moment": "git@github.com:moment/moment#~2.8.0",
+      "require":"git@github.com:jrburke/requirejs#~2.1.15",
       "require-text": "git@github.com:requirejs/text#~2.0.0",
       "require-css": "git@github.com:guybedford/require-css#~0.1.7"
   }
