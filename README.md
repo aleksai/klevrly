@@ -1,7 +1,7 @@
 klevrly
 =======
 
-Klevrly - application
+Assumes that you have <code>node</code> and <code>npm</code> installed.
 
 
 ###Setup and Run project
