@@ -7,7 +7,7 @@ Klevrly - application
 ###Install Dependencies
 <code>bower install</code>
 
-###Run Unit Test
+###Run Unit Tests
 <code>karma start</code>
 
 ###Compile and Minify JS
