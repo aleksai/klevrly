@@ -1,0 +1,19 @@
+{
+    "name": "Klevrly",
+    "version": "0.0.1",
+    "homepage": "https://github.com/aleksai/klevrly",
+    "authors": [
+        "Aleks Iraguha <aleks.iraguha@gmail.com>"
+    ],
+    "description": "Klevrly - Music Application",
+    "main": "js/src/main.js",
+    "license": "MIT",
+    "private": true,
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ]
+}
