@@ -1,22 +1,28 @@
 {
-    "name": "Klevrly",
-    "version": "0.0.1",
-    "homepage": "https://github.com/aleksai/klevrly",
-    "authors": [
-        "Aleks Iraguha <aleks.iraguha@gmail.com>"
-    ],
-    "description": "Klevrly - Music Application",
-    "main": "js/src/main.js",
-    "license": "MIT",
-    "private": true,
-    "ignore": [
-        "**/.*",
-        "node_modules",
-        "bower_components",
-        "test",
-        "tests"
-    ],
-    "devDependencies":{
-        "jquery":"~2.0.0"
-    }
+  "name": "Klevrly",
+  "version": "0.0.1",
+  "homepage": "https://github.com/aleksai/klevrly",
+  "authors": [
+    "Aleks Iraguha <aleks.iraguha@gmail.com>"
+  ],
+  "description": "Klevrly - Music Application",
+  "main": "js/src/main.js",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+      "jquery": "~2.0.0",
+      "jquery-ui": "~1.11.2",
+      "backbone": "git@github.com:jashkenas/backbone#~1.1.0",
+      "underscore": "git@github.com:jashkenas/underscore#~1.7.0",
+      "moment": "git@github.com:moment/moment#~2.8.0",
+      "require-text": "git@github.com:requirejs/text#~2.0.0",
+      "require-css": "git@github.com:guybedford/require-css#~0.1.7"
+  }
 }
