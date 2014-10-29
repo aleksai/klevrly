@@ -2,11 +2,11 @@
 
 require.config({
     paths:{
-        jquery:'../lib/jquery/jquery-min',
+        jquery:'../bower/jquery/jquery',
         jqueryui:'../lib/jqueryui/jquery-ui-1.10.3.custom.min',
         underscore:'../bower/underscore/underscore',
         backbone:'../bower/backbone/backbone',
-        text:'../lib/require/text',
+        text:'../bower/require-text/text',
         bubble: '../lib/bubble/backbone.bubble.min',
         moment:'../bower/moment/moment',
         knob:'../lib/knob/jquery.knob',
