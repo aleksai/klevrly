@@ -26,6 +26,8 @@
       "require-text": "git@github.com:requirejs/text#~2.0.0",
       "require-css": "git@github.com:guybedford/require-css#~0.1.7",
       "velocity": "git@github.com:julianshapiro/velocity#~1.1.0",
-      "sly": "git@github.com:darsain/sly#~v1.2.6"
+      "sly": "git@github.com:darsain/sly#~v1.2.6",
+      "highcharts":"./js/lib/highcharts/highcharts.js",
+      "bubble":"./js/lib/bubble/backbone.bubble.min.js"
   }
 }

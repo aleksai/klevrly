@@ -7,7 +7,7 @@ require.config({
         underscore:'../bower/underscore/underscore',
         backbone:'../bower/backbone/backbone',
         text:'../bower/require-text/text',
-        bubble: '../lib/bubble/backbone.bubble.min',
+        bubble: '../bower/bubble/index',
         moment:'../bower/moment/moment',
         knob:'../lib/knob/jquery.knob',
         //highcharts:'../lib/highcharts/highcharts',
