@@ -3,7 +3,7 @@ define(['backbone','underscore'],function(Backbone,_){
 
     function AppModule(application,options){
         this.eventBus = application.eventBus;
-        _(this).extend(options);        //TODO - is this necessary
+        _(this).extend(options);
 
         this.publish = function(eventName,options){
             this.eventBus.trigger(eventName,options);

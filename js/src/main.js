@@ -74,7 +74,7 @@ define(['jquery','jqueryui','underscore','backbone','router','application',
             application.start({router:appRouter});
             Backbone.history.start();
 
-            window.versionTitle = "Klevrly 2.1";
+            window.versionTitle = "Klevrly 2.1.1";
             document.title = window.versionTitle;
 
         });
